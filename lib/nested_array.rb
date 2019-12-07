@@ -34,14 +34,18 @@ def array_literal_matrix
   end
   enfield_sorted.length.times do |j|
     nested_array[1].push(enfield_sorted[j])
+  end
   nested_array
 end
 
 def matrix_lookup(matrix, row, column)
   # Return the matrix's content at row and column
+  matrix[row][column]
 end
 
 def matrix_update(matrix, row, column, new_value)
   # Update the matrix location at row and column to have the value of new_value
   # Return the updated matrix
+  matrix[row][column] = new_value
+  matrix
 end
